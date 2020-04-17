@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		7FFB4E8B2447709D00A8B87D /* SwiftCheatSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFB4E892447709D00A8B87D /* SwiftCheatSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FFB4E9E2447713D00A8B87D /* LogExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4E922447713C00A8B87D /* LogExtension.swift */; };
+		7FFB4E9F2447713D00A8B87D /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4E932447713C00A8B87D /* UITableViewExtensions.swift */; };
+		7FFB4EA12447713D00A8B87D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4E952447713D00A8B87D /* UIColorExtension.swift */; };
+		7FFB4EA22447713D00A8B87D /* AnimationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4E962447713D00A8B87D /* AnimationExtensions.swift */; };
+		7FFB4EA62447713D00A8B87D /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4E9A2447713D00A8B87D /* NSObjectExtensions.swift */; };
+		7FFB4EA72447713D00A8B87D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4E9B2447713D00A8B87D /* BaseViewController.swift */; };
+		7FFB4EA92447713D00A8B87D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4E9D2447713D00A8B87D /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7FFB4E862447709D00A8B87D /* SwiftCheatSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCheatSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FFB4E892447709D00A8B87D /* SwiftCheatSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCheatSheet.h; sourceTree = "<group>"; };
 		7FFB4E8A2447709D00A8B87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FFB4E922447713C00A8B87D /* LogExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LogExtension.swift; sourceTree = "<group>"; tabWidth = 2; };
+		7FFB4E932447713C00A8B87D /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		7FFB4E952447713D00A8B87D /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		7FFB4E962447713D00A8B87D /* AnimationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationExtensions.swift; sourceTree = "<group>"; };
+		7FFB4E9A2447713D00A8B87D /* NSObjectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; tabWidth = 2; };
+		7FFB4E9B2447713D00A8B87D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7FFB4E9D2447713D00A8B87D /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +60,33 @@
 		7FFB4E882447709D00A8B87D /* SwiftCheatSheet */ = {
 			isa = PBXGroup;
 			children = (
+				7FFB4EAA244771CE00A8B87D /* Base */,
+				7FFB4E912447712C00A8B87D /* Extensions */,
 				7FFB4E892447709D00A8B87D /* SwiftCheatSheet.h */,
 				7FFB4E8A2447709D00A8B87D /* Info.plist */,
 			);
 			path = SwiftCheatSheet;
+			sourceTree = "<group>";
+		};
+		7FFB4E912447712C00A8B87D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4E962447713D00A8B87D /* AnimationExtensions.swift */,
+				7FFB4E9A2447713D00A8B87D /* NSObjectExtensions.swift */,
+				7FFB4E952447713D00A8B87D /* UIColorExtension.swift */,
+				7FFB4E932447713C00A8B87D /* UITableViewExtensions.swift */,
+				7FFB4E9D2447713D00A8B87D /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7FFB4EAA244771CE00A8B87D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB4E9B2447713D00A8B87D /* BaseViewController.swift */,
+				7FFB4E922447713C00A8B87D /* LogExtension.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +132,7 @@
 				TargetAttributes = {
 					7FFB4E852447709D00A8B87D = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFB4E9E2447713D00A8B87D /* LogExtension.swift in Sources */,
+				7FFB4EA22447713D00A8B87D /* AnimationExtensions.swift in Sources */,
+				7FFB4E9F2447713D00A8B87D /* UITableViewExtensions.swift in Sources */,
+				7FFB4EA92447713D00A8B87D /* UIViewExtension.swift in Sources */,
+				7FFB4EA72447713D00A8B87D /* BaseViewController.swift in Sources */,
+				7FFB4EA62447713D00A8B87D /* NSObjectExtensions.swift in Sources */,
+				7FFB4EA12447713D00A8B87D /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +305,7 @@
 		7FFB4E8F2447709D00A8B87D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VU3XR9LNT8;
@@ -276,6 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tal.sharon.software.SwiftCheatSheet;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +331,7 @@
 		7FFB4E902447709D00A8B87D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VU3XR9LNT8;
