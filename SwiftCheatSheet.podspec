@@ -10,8 +10,7 @@ Pod::Spec.new do |spec|
  
   spec.platform     = :ios, "12.0"
 
-  # spec.source       = { :git => "http://EXAMPLE/SwiftCheatSheet.git", :tag => "#{spec.version}" }
-  spec.source       = { :path => '.' }
+  spec.source       = { :git => "git@github.com:talsharon/SwiftCheatSheet.git", :tag => "1.0.0" }
   spec.source_files  = "SwiftCheatSheet", "SwiftCheatSheet/**/*.swift"
 
 end
