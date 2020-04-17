@@ -12,5 +12,6 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "git@github.com:talsharon/SwiftCheatSheet.git", :tag => "1.0.0" }
   spec.source_files  = "SwiftCheatSheet", "SwiftCheatSheet/**/*.swift"
+  spec.swift_version = "4.2" 
 
 end
